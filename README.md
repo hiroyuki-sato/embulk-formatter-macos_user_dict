@@ -1,6 +1,6 @@
 # Macos User Dict formatter plugin for Embulk
 
-TODO: Write short description here and embulk-formatter-macos_user_dict.gemspec file.
+macOS User Dictionary formatter plugin for Embulk
 
 ## Overview
 
@@ -33,8 +33,8 @@ in:
     - {name: shortcut, type: string}
 out:
   type: file
-  path_prefix: /tmp/test.
-  file_ext: .plist
+  path_prefix: dict.
+  file_ext: plist
   formatter:
     type: macos_user_dict
 
