@@ -1,4 +1,4 @@
-# Macos User Dict formatter plugin for Embulk
+# macOS User Dictionary formatter plugin for Embulk
 
 macOS User Dictionary formatter plugin for Embulk
 
