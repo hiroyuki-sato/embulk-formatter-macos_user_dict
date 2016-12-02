@@ -3,11 +3,11 @@ Gem::Specification.new do |spec|
   spec.name          = "embulk-formatter-macos_user_dict"
   spec.version       = "0.1.0"
   spec.authors       = ["Hiroyuki Sato"]
-  spec.summary       = "Macos User Dict formatter plugin for Embulk"
-  spec.description   = "Formats Macos User Dict files for other file output plugins."
-  spec.email         = ["hsato@archsystem.com"]
+  spec.summary       = "macOS User Dictionary formatter plugin for Embulk"
+  spec.description   = "macOS User Dictionary formatter plugin for Embulk"
+  spec.email         = ["hiroysato@gmail.com"]
   spec.licenses      = ["MIT"]
-  # TODO set this: spec.homepage      = "https://github.com/hsato/embulk-formatter-macos_user_dict"
+  spec.homepage      = "https://github.com/hiroyuki-sato/embulk-formatter-macos_user_dict"
 
   spec.files         = `git ls-files`.split("\n") + Dir["classpath/*.jar"]
   spec.test_files    = spec.files.grep(%r{^(test|spec)/})

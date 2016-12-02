@@ -8,19 +8,39 @@ TODO: Write short description here and embulk-formatter-macos_user_dict.gemspec 
 
 ## Configuration
 
-- **option1**: description (integer, required)
-- **option2**: description (string, default: `"myvalue"`)
-- **option3**: description (string, default: `null`)
+- **phrase_column**: phrase colum name (string, default: `"phrase"`)
+- **shortcut_column**: shortcut column name (string, default: `"shortcut"`)
 
 ## Example
 
 ```yaml
+in:
+  type: file
+  path_prefix: dict.txt
+  parser:
+    charset: UTF-8
+    newline: CRLF
+    type: csv
+    delimiter: ','
+    quote: '"'
+    escape: '"'
+    trim_if_not_quoted: false
+    skip_header_lines: 1
+    allow_extra_columns: false
+    allow_optional_columns: false
+    columns:
+    - {name: phrase, type: string}
+    - {name: shortcut, type: string}
 out:
-  type: any output input plugin type
+  type: file
+  path_prefix: /tmp/test.
+  file_ext: .plist
   formatter:
     type: macos_user_dict
-    option1: example1
-    option2: example2
+
+
+exec:
+  max_min_output: 1
 ```
 
 
